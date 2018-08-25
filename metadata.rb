@@ -1,3 +1,5 @@
+name 'splunkforwarder'
+
 version '1.0.0'
 
 description 'Installs & Configures Splunk Forwarder'
