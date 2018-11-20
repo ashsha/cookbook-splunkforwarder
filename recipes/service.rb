@@ -10,7 +10,7 @@
 #
 
 
-execute '/opt/splunkforwarder/bin/splunk enable boot-start --accept-license' +
+execute '/opt/splunkforwarder/bin/splunk enable boot-start --accept-license --no-prompt' +
     ' --answer-yes' do
   not_if{ File.symlink?('/etc/rc4.d/S20splunk') }
 end
